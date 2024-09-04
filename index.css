@@ -1,0 +1,394 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(
+        120deg,
+        coral,
+        rgba(222, 162, 162, 0.993),
+        red
+    );
+    height: auto;
+}
+
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+section{
+
+    width: min(85%,900px);
+    height: auto;
+    background-color: white;
+    border: 2px solid white;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 20px;
+    padding: 2rem;
+    font-size: 24px;
+    box-shadow: 2px 2px 20px  black;
+    scroll-margin: 20px;
+}
+
+.intro img{
+    height: 35%;
+    width: 35%;
+    float: right;
+    border-radius: 50%;
+}
+
+.name{
+    font-weight: 900;
+    font-size: 36px;
+}
+
+.red{
+    font-size: medium;
+    color: red;
+}
+
+.dim{
+    color: gray;
+    font-size: large;
+}
+
+.intro button{
+    width: 100px;
+    height: 50px;
+    margin: 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    border: 0cap;
+    background-color: red;
+    color: white;
+}
+
+.intro .resumeBtn{
+    margin-left: 0;
+    background-color: coral;
+    color: white;
+}
+
+l{
+    color: rgb(241, 92, 33);
+    font-weight: 600;
+}
+
+.intro button:hover{
+    background-color: rgb(232, 232, 232);
+    color: #000;
+    transition: all;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.aboutme .info{
+    padding: 0.5rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 4px coral;
+}
+
+.aboutme nav{
+    list-style: none;
+    border-bottom: 1px solid black;
+    padding: 10px;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.aboutme nav li{
+    /* margin: 10px; */
+    display: block;
+    border: 4px solid transparent;
+    padding-bottom: 10px;
+}
+
+.aboutme nav li:hover{
+    cursor: pointer;
+    border-bottom: 4px solid red;
+}
+
+.educationSec{
+    display: none;
+}
+.personalSec{
+    display: none;
+}
+
+.mySkillsContent{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.mySkillsContent div{
+    border-radius: 20px;
+    flex: 1;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px ;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.mySkillsContent div:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 4px 4px;
+}
+
+.projectsContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card{
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px black;
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; 
+    gap: 20px;
+}
+
+.icon-container {
+    text-align: center; 
+}
+
+.icon-container i {
+    font-size: 2rem;
+    display: block; 
+}
+
+.icon-container p {
+    font-size: 1rem; 
+    margin-top: 5px; 
+    margin-bottom: 0; 
+}
+
+i{
+    color: rgb(0, 119, 255);
+}
+
+i:hover{
+    transform: scale(0.9);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.contactsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.myinfo {
+    border-right: 2px solid red;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    height: 100%;
+}
+
+.myinfo p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.formToContact {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+input, textarea {
+    padding: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    transition: border-color 0.2s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: red; 
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical; 
+}
+
+.contactsection div {
+    flex: 1;
+}
+
+header nav ul li{
+    list-style: none;
+    font-size: 1.5rem;
+    margin: 4px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+header nav{
+    background-color: rgba(249, 249, 249, 0.403);
+    position: fixed;
+    top: 0;
+    right: 40px;
+}
+
+.first{
+    margin-top: 80px;
+}
+
+
+.menu-icon{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    position: fixed;
+    cursor: pointer;
+}
+
+.hamburger-menu{
+    position: fixed;
+    display: none;
+}
+
+.hamburger-menu-content{
+    position: relative;
+    top: 30px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.707);
+    display: none;
+}
+
+.hamburger-menu-content ul li{
+    list-style: none;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+.hamburger-menu-content li:hover{
+    background-color: #000;
+}
+
+.hamburger-menu-content ul{
+    padding:0;
+}
+
+.hamburger-menu-content a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1.5rem;
+    
+}
+
+.menu-button{
+    position: relative;
+    width: 45px;
+    height: 5px;
+    background-color: black;
+    border-radius: 2rem;
+}
+
+.menu-button::after,.menu-button::before{
+    position: absolute;
+    left: 0;
+    background-color: black;
+    width: 45px;
+    height: 5px;
+    content: "";
+    border-radius: 2rem;
+}
+
+.menu-button::before{
+    transform: translate(0,-12px);
+}
+
+.menu-button::after{
+    transform: translate(0,12px);
+}
+
+@media screen and (max-width:620px ){
+    .mySkillsContent{
+        flex-flow: column nowrap;
+    }
+
+    .contactsection{
+        flex-flow: column nowrap;
+    }
+
+    .myinfo{
+        border-right: none;
+        border-bottom: 2px solid red;
+        padding-bottom: 2rem;
+    }
+}
+
+
+@media screen and (max-width:760px) {
+    .navbar{
+        display: none;
+    }
+
+    .hamburger-menu{
+        display: block;
+    }
+}
+
+@media screen and (min-width:760px){
+    /* main{
+        background-color: green;
+    } */
+}
+
+
+img {
+    width: clamp(140px, 200px, 280px);
+    height: clamp(190px, 265px, 340px);
+    max-width: 280px;
+    max-height: 340px;
+    box-sizing: border-box;
+}
